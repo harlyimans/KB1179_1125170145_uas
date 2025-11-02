@@ -11,6 +11,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      // Hilangkan Banner Debug 
+      debugShowCheckedModeBanner: false,
       title: "NIM : 1125170145, HarlyImans",
       theme: ThemeData(
         useMaterial3: true,
