@@ -19,12 +19,25 @@ class Mysplashscreen1 extends StatelessWidget {
               decoration: BoxDecoration(
                 shape: BoxShape.circle,
                 color: Colors.green,
+                image: DecorationImage(
+                  image: AssetImage("assets/img/image-3.png"),
+                  fit: BoxFit.cover,
+                ),
+              ),
+            ),
+            // Step 3 : Buat Title Hitam
+            SizedBox(height: 15),
+            Text(
+              "WELCOME",
+              style: TextStyle(
+                fontSize: 25.0,
+                fontWeight: FontWeight.bold,
+                color: Colors.black,
               ),
             ),
           ],
         ),
       ),
-      // Step 3 : Buat Title Hitam
       // Step 4 : Buat SUbtitle
       // Step 5 : Buat Desain 3 Bulatan Kecil
       // Step 6 : Buat Tombol Continue
