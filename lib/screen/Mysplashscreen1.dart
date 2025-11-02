@@ -6,6 +6,24 @@ class MySplashscreen1 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      // Step 1 : Buat Multiple Widget sebagai pondasi tampilan dengan menggunakan widget children
+      body: Column(
+        children: [
+          // Step 2 : Buat Image Bulat
+          Container(
+            width: 200,
+            height: 200,
+            decoration: BoxDecoration(
+              shape: BoxShape.circle,
+              color: Colors.green,
+            ),
+          ),
+        ],
+      ),
+      // Step 3 : Buat Title Hitam
+      // Step 4 : Buat SUbtitle
+      // Step 5 : Buat Desain 3 Bulatan Kecil
+      // Step 6 : Buat Tombol Continue
     );
   }
 }
