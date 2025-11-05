@@ -75,10 +75,40 @@ class Mysplashscreen1 extends StatelessWidget {
                 ),
               ],
             ),
+            // Step 6 : Buat Tombol Continue
+            SizedBox(height: 20),
+            Container(
+              margin: EdgeInsets.only(left: 20, right: 20),
+              child: SizedBox(
+                width: double.infinity,
+                height: 40,
+                child: ElevatedButton(
+                  onPressed: () {
+                    // Navigator.push(
+                    //   context,
+                    //   MaterialPageRoute(
+                    //     builder: (context) => MySplashScreen2(),
+                    //   ),
+                    // );
+                  },
+                  child: Text(
+                    "Welcome",
+                    style: TextStyle(
+                      fontSize: 20.0,
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: Colors.green,
+                    foregroundColor: Colors.white,
+                  ),
+                ),
+              ),
+            ),
           ],
         ),
       ),
-      // Step 6 : Buat Tombol Continue
     );
   }
 }
