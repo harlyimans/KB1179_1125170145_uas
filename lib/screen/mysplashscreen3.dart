@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:kb1179_1125170145_uas/screen/mysplashscreen2.dart';
 
-class Mysplashscreen1 extends StatelessWidget {
-  const Mysplashscreen1({super.key});
+class Mysplashscreen3 extends StatelessWidget {
+  const Mysplashscreen3({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -29,7 +28,7 @@ class Mysplashscreen1 extends StatelessWidget {
             // Step 3 : Buat Title Hitam
             SizedBox(height: 15),
             Text(
-              "WELCOME",
+              "WELCOME 3",
               style: TextStyle(
                 fontSize: 25.0,
                 fontWeight: FontWeight.bold,
@@ -85,12 +84,12 @@ class Mysplashscreen1 extends StatelessWidget {
                 height: 40,
                 child: ElevatedButton(
                   onPressed: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => Mysplashscreen2(),
-                      ),
-                    );
+                    // Navigator.push(
+                    //   context,
+                    //   MaterialPageRoute(
+                    //     builder: (context) => MySplashScreen2(),
+                    //   ),
+                    // );
                   },
                   child: Text(
                     "Welcome",
