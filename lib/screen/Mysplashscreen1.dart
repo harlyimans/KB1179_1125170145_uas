@@ -35,10 +35,16 @@ class Mysplashscreen1 extends StatelessWidget {
                 color: Colors.black,
               ),
             ),
+            // Step 4 : Buat Subtitle
+            SizedBox(height: 5),
+            Text(
+              "Forgot to bring your wallet \n when you are shoping ?",
+              textAlign: TextAlign.center,
+              style: TextStyle(color: Colors.green, fontSize: 16.0),
+            ),
           ],
         ),
       ),
-      // Step 4 : Buat SUbtitle
       // Step 5 : Buat Desain 3 Bulatan Kecil
       // Step 6 : Buat Tombol Continue
     );
