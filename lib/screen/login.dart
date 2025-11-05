@@ -72,6 +72,80 @@ class Login extends StatelessWidget {
                 ),
               ),
             ),
+            SizedBox(height: 5),
+            Align(
+              alignment: Alignment.centerRight,
+              child: TextButton(
+                onPressed: () {},
+                child: Text(
+                  "Lupa Password?",
+                  style: TextStyle(fontSize: 14.0, color: Colors.blue),
+                ),
+              ),
+            ),
+            SizedBox(height: 10),
+            Container(
+              margin: EdgeInsets.only(left: 20, right: 20),
+              child: SizedBox(
+                width: double.infinity,
+                height: 40,
+                child: ElevatedButton(
+                  onPressed: () {
+                    Navigator.pushAndRemoveUntil(
+                      context,
+                      MaterialPageRoute(builder: (context) => Login()),
+                      (Route<dynamic> router) => false,
+                    );
+                  },
+                  child: Text(
+                    "Login",
+                    style: TextStyle(
+                      fontSize: 20.0,
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: Colors.blue,
+                    foregroundColor: Colors.white,
+                  ),
+                ),
+              ),
+            ),
+            SizedBox(height: 10),
+            Container(
+              margin: EdgeInsets.only(left: 20, right: 20),
+              child: Row(
+                children: [
+                  Expanded(child: Divider(color: Colors.green)),
+                  SizedBox(width: 5),
+                  Text("atau", style: TextStyle(fontSize: 12.0)),
+                  SizedBox(width: 5),
+                  Expanded(child: Divider(color: Colors.green)),
+                ],
+              ),
+            ),
+            Container(
+              margin: EdgeInsets.only(left: 20, right: 20),
+              child: SizedBox(
+                width: double.infinity,
+                child: OutlinedButton.icon(
+                  onPressed: () {},
+                  icon: Icon(Icons.g_mobiledata, color: Colors.grey[800]),
+                  label: Text(
+                    "Login dengan Google",
+                    style: TextStyle(color: Colors.grey[800]),
+                  ),
+                  style: OutlinedButton.styleFrom(
+                    padding: const EdgeInsets.symmetric(vertical: 12),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadiusGeometry.circular(20),
+                    ),
+                    side: BorderSide(color: Colors.grey[300]!),
+                  ),
+                ),
+              ),
+            ),
           ],
         ),
       ),
