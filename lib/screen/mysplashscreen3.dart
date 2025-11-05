@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:kb1179_1125170145_uas/screen/login.dart';
 
 class Mysplashscreen3 extends StatelessWidget {
   const Mysplashscreen3({super.key});
@@ -51,25 +52,25 @@ class Mysplashscreen3 extends StatelessWidget {
                   height: 10,
                   width: 10,
                   decoration: BoxDecoration(
+                    color: Colors.green[100]!,
+                    shape: BoxShape.circle,
+                  ),
+                ),
+                SizedBox(width: 10),
+                Container(
+                  height: 10,
+                  width: 10,
+                  decoration: BoxDecoration(
+                    color: Colors.green[100]!,
+                    shape: BoxShape.circle,
+                  ),
+                ),
+                SizedBox(width: 10),
+                Container(
+                  height: 10,
+                  width: 10,
+                  decoration: BoxDecoration(
                     color: Colors.green,
-                    shape: BoxShape.circle,
-                  ),
-                ),
-                SizedBox(width: 10),
-                Container(
-                  height: 10,
-                  width: 10,
-                  decoration: BoxDecoration(
-                    color: Colors.green[100]!,
-                    shape: BoxShape.circle,
-                  ),
-                ),
-                SizedBox(width: 10),
-                Container(
-                  height: 10,
-                  width: 10,
-                  decoration: BoxDecoration(
-                    color: Colors.green[100]!,
                     shape: BoxShape.circle,
                   ),
                 ),
@@ -84,15 +85,15 @@ class Mysplashscreen3 extends StatelessWidget {
                 height: 40,
                 child: ElevatedButton(
                   onPressed: () {
-                    // Navigator.push(
-                    //   context,
-                    //   MaterialPageRoute(
-                    //     builder: (context) => MySplashScreen2(),
-                    //   ),
-                    // );
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => Login(),
+                      ),
+                    );
                   },
                   child: Text(
-                    "Welcome",
+                    "Login",
                     style: TextStyle(
                       fontSize: 20.0,
                       color: Colors.white,

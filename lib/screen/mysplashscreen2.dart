@@ -52,7 +52,7 @@ class Mysplashscreen2 extends StatelessWidget {
                   height: 10,
                   width: 10,
                   decoration: BoxDecoration(
-                    color: Colors.green,
+                    color: Colors.green[100]!,
                     shape: BoxShape.circle,
                   ),
                 ),
@@ -61,7 +61,7 @@ class Mysplashscreen2 extends StatelessWidget {
                   height: 10,
                   width: 10,
                   decoration: BoxDecoration(
-                    color: Colors.green[100]!,
+                    color: Colors.green,
                     shape: BoxShape.circle,
                   ),
                 ),
@@ -93,7 +93,7 @@ class Mysplashscreen2 extends StatelessWidget {
                     );
                   },
                   child: Text(
-                    "Welcome",
+                    "Continue",
                     style: TextStyle(
                       fontSize: 20.0,
                       color: Colors.white,

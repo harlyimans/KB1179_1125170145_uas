@@ -93,7 +93,7 @@ class Mysplashscreen1 extends StatelessWidget {
                     );
                   },
                   child: Text(
-                    "Welcome",
+                    "Continue",
                     style: TextStyle(
                       fontSize: 20.0,
                       color: Colors.white,
