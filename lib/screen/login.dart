@@ -48,6 +48,30 @@ class Login extends StatelessWidget {
                 ),
               ),
             ),
+            SizedBox(height: 5),
+            Container(
+              margin: EdgeInsets.only(left: 20, right: 20),
+              child: TextField(
+                obscureText: true,
+                decoration: InputDecoration(
+                  labelText: 'Password',
+                  hintText: "Silahkan Masukkan Alamat Password Anda",
+                  prefixIcon: Icon(Icons.password),
+                  suffixIcon: Icon(Icons.visibility_rounded),
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(10),
+                  ),
+                  enabledBorder: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(10),
+                    borderSide: BorderSide(color: Colors.green),
+                  ),
+                  focusedBorder: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(20),
+                    borderSide: BorderSide(color: Colors.blue),
+                  ),
+                ),
+              ),
+            ),
           ],
         ),
       ),
