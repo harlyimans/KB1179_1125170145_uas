@@ -42,10 +42,42 @@ class Mysplashscreen1 extends StatelessWidget {
               textAlign: TextAlign.center,
               style: TextStyle(color: Colors.green, fontSize: 16.0),
             ),
+            // Step 5 : Buat Desain 3 Bulatan Kecil
+            SizedBox(height: 20),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Container(
+                  height: 10,
+                  width: 10,
+                  decoration: BoxDecoration(
+                    color: Colors.green,
+                    shape: BoxShape.circle,
+                  ),
+                ),
+                SizedBox(width: 10),
+                Container(
+                  height: 10,
+                  width: 10,
+                  decoration: BoxDecoration(
+                    color: Colors.green[100]!,
+                    shape: BoxShape.circle,
+                  ),
+                ),
+                SizedBox(width: 10),
+                Container(
+                  height: 10,
+                  width: 10,
+                  decoration: BoxDecoration(
+                    color: Colors.green[100]!,
+                    shape: BoxShape.circle,
+                  ),
+                ),
+              ],
+            ),
           ],
         ),
       ),
-      // Step 5 : Buat Desain 3 Bulatan Kecil
       // Step 6 : Buat Tombol Continue
     );
   }
